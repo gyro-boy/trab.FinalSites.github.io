@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background: url(/imgs/fried.chkn.png);
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;   
+    padding: 2% 2%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid #F98605;
+}
+
+.logo{
+    font-size: 35px;
+    font-weight: 700;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #F98605;
+    background: white;
+}
+
+.navbar a {
+    color:#F98605;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 50px;
+    background: white;
+}
+
+.promocao{
+    margin-top: 7%;
+    padding-right: 5%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: solid #F98605;
+}
+
+.promocao a{
+    text-decoration: none;
+    color: black;
+}
+
+.text_promocao{
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid #F98605;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.preco_promocao{
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #F98605;
+    padding-left: 5%;
+    text-align: center;
+}
+
+.w3-display-container{
+    border: solid #F98605;
+    display: flex;
+    width: 100%;
+    align-content: center;
+}
+
+.w3-display-container div{
+    display: flex;
+    max-height: 100%;
+    min-height: 100%;
+}
+
+.w3-display-container img{
+    border: #F98605;
+    max-height: 450px;
+    min-height: 450px;
+}
+
+.w3-display-container div div a{
+    text-decoration: none;
+    color: black;
+}
+
+.w3-display-container div div div{
+    border: solid;
+    display: flex;
+    align-self: center;
+    text-align: center;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F98605;
+    background-color: white;
+    padding: 10px;
+    min-width: 17%;
+    max-width: 17%;
+}
+
+.w3-display-container button{
+    display: flex;
+    width: 3%;
+    align-self: center;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 25%;
+    color: black;
+
+}
+
+.footer{
+    width: 100%;
+    padding: 2% 2%;
+    background: #F98605;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid #F98605;
+}
+
+.navbar-footer a {
+    color:white;
+    font-size: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+@media screen and (max-width: 1200px){
+
+ .header{
+    display: flex;
+    position: absolute;
+    max-height: 75px;
+ }
+
+ .navbar a{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+ }
+
+ .navbar{
+    position:relative;
+    top: 770px;
+    right: 80%;
+    background-color: white;
+    border: solid #F98605;
+    padding-left: 500px;
+    padding-right: 10px;
+ }
+
+ .text_promocao{
+    display: flex;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+    left: 15%;
+ }
+
+ .preco_promocao{
+    display: flex;
+    position: relative;
+    right: 25%;
+    top: 50px;
+ }
+
+ .w3-display-container div div div{
+    font-size: small;
+ }
+
+ .w3-display-container{
+    position: relative;
+    left: 170px;
+    border: none;
+ }
+
+ .imgRight{
+    display: none;
+ }
+
+ .imgLeft{
+    position: relative;
+    right: 5%;
+ }
+
+ .w3-display-left{
+    position: relative;
+    left: 61%;
+    top: 30px;
+ }
+
+ .w3-display-right{
+    position: relative;
+    left: 1%;
+    bottom: 20px;
+ }
+
+}
+
+@media screen and (max-width: 1040px){
+
+ .header{
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    flex-direction: column;
+    align-self: center;
+    align-content: center;
+ }
+
+ .logo{
+    margin-bottom: 1%;
+    align-self: center;
+ }
+
+ .navbar{
+    display: flex;
+    position: initial;
+    align-content: center;
+    font-size: 9px;
+    top: 0px;
+    right: 0%;
+    padding: 0px;
+    margin: 0px;
+ }
+
+ .navbar a{
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    padding-left: 5%;
+    padding-right: 1%;
+    padding-top: 10px;
+    margin: 0px;
+ }
+
+ .promocao{
+    margin-top: 75px;
+    flex-direction: column;
+ }
+
+ .text_promocao{
+    margin-top: 20px;
+    position:initial;
+ }
+
+ .preco_promocao{
+    margin-top: 20px;
+    position: initial;
+    font-size: xx-large;
+ }
+
+ .imgP{
+    margin-top: 50px;
+    position: relative;
+    left: 17%;
+    max-height: 70%;
+    max-width: 70%;
+ }
+
+ .imgLeft{
+    align-self: center;
+    width: 350px;
+    margin-left: 11%;
+    padding-top: 50px;
+ }
+
+ .w3-display-container{
+    position: initial;
+ }
+
+ .w3-display-container div{
+    flex-direction: column;
+ }
+
+ .w3-display-right{
+    position: relative;
+    left: 45%;
+    bottom: 320px;
+ }
+
+ .w3-display-left{
+    z-index: 1;
+    position: relative;
+    top: 243px;
+    left: auto;
+    right: 45%
+ }
+
+ .w3-display-container div div div{
+    position: relative;
+    font-size: small;
+    min-width: 100%;
+ }
+
+ .footer{
+    display: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar-footer a {
+    display: none;
+}
+
+}

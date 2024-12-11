@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Fritos Frangos - RS</title>
+</head>
+<body>  
+
+<!-- Navegação topo página -->
+    <header class="header">
+        <a href="/index.html" class="logo">FRITOS FRANGOS</a>
+
+        <nav class="navbar" > 
+            <a href="/cardápio.html">CARDÁPIO</a>
+            <a href="#">CONTATO</a>
+            <a href="#">QUEM SOMOS</a>
+            <a href="#"> TRABALHE CONOSCO</a>
+        </nav>
+    </header>
+
+<!-- Promoção Mês -->
+    <div class="promocao">
+        <div class="img_promocao">
+            <img class="imgP" src="/imgs/cardapio/chkn1.png" alt="promocao">
+        </div>
+        <div class="text_promocao">
+            <a href="carrinho.html">
+            <h1>CHKN BURGUER</h1>
+            <h2>Experimente!</h2>
+            </a>
+        </div>
+        <div class="preco_promocao">
+            <h1>R$</h1>
+            <h1>35.00</h1>
+            <h1>R$</h1>
+        </div>
+    </div>
+
+<!-- Slider Produtos (https://www.w3schools.com/w3css/w3css_slideshow.asp) --> 
+
+<div class="w3-content w3-display-container">
+
+  <div class="w3-display-container mySlides">
+    <div>
+      <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+      <img class="imgLeft" src="/imgs/cardapio/chkn1.png">
+      <div class="nome">
+        <a href="cardápio.html" text-decoration>
+        <h3>PEÇA AGORA!</h3>
+        <h1>CHKN BURGUER</h1>
+        <p>APENAS R$ 35.00 R$</p>
+        </a>
+      </div>
+      <img class="imgRight" src="/imgs/cardapio/chkn1.png">
+      <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+    </div>
+    
+    <div class="w3-display-container mySlides">
+      <div>
+        <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+        <img class="imgLeft" src="/imgs/cardapio/chkn2.png">
+        <div class="nome">
+          <a href="cardápio.html" text-decoration>
+          <h3>PEÇA AGORA!</h3>
+          <h1>PORÇÃO PEDAÇOS</h1>
+          <p>APENAS R$ 34.99 R$</p>
+          </a>
+        </div>
+        <img class="imgRight" src="/imgs/cardapio/chkn2.png">
+        <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+    </div>
+    
+    <div class="w3-display-container mySlides">
+      <div>
+        <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+        <img class="imgLeft" src="/imgs/cardapio/chkn3.png">
+        <div class="nome">
+          <a href="cardápio.html" text-decoration>
+          <h3>PEÇA AGORA!</h3>
+          <h1>PEITO E FRITAS</h1>
+          <p>APENAS R$ 37.99 R$</p>
+          </a>
+        </div>
+        <img class="imgRight" src="/imgs/cardapio/chkn3.png">
+        <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+    </div>
+    
+    <div class="w3-display-container mySlides">
+      <div>
+        <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+        <img class="imgLeft" src="/imgs/cardapio/chkn4.png">
+        <div class="nome">
+          <a href="cardápio.html" text-decoration>
+          <h3>PEÇA AGORA!</h3>
+          <h1>SÓ COXAS</h1>
+          <p>APENAS R$ 36.99 R$</p>
+          </a>
+        </div>
+        <img class="imgRight" src="/imgs/cardapio/chkn4.png">
+        <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+    </div>
+    
+    <div class="w3-display-container mySlides">
+      <div>
+        <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+        <img class="imgLeft" src="/imgs/cardapio/chkn5.png">
+        <div class="nome">
+          <a href="cardápio.html" text-decoration>
+          <h3>PEÇA AGORA!</h3>
+          <h1>NUGGETS</h1>
+          <p>APENAS R$ 19.99 R$</p>
+          </a>
+        </div>
+        <img class="imgRight" src="/imgs/cardapio/chkn5.png" style="width: 40%">
+        <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+    </div>
+    
+  </div>
+
+    <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    </script>
+
+<!-- Footer --> 
+<div class="footer">
+  <nav class="navbar-footer" > 
+      <a class="a" href="/cardápio.html">CARDÁPIO</a>
+      <a href="/contato.html">CONTATO</a>
+      <a href="#">QUEM SOMOS</a>
+      <a href="#"> TRABALHE CONOSCO</a>
+  </nav>
+</div>
+
+</body>
+</html>
